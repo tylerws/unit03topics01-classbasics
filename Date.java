@@ -9,6 +9,7 @@ public class Date {
         day = dateDay;
         year = dateYear;
     }
+    
     public int getMonth() {
         return month;
     }
@@ -43,6 +44,19 @@ public class Date {
         return result;
     }
     public static void main(String[] args) {
+
+        final int NTESTS = 3;
+        for (int trial = 0; trial < NTESTS; trial++) {
+            int month = (int) (Math.random() * 12)  + 1;
+            int day = (int) (Math.random() * 28)  + 1;
+            int year = (int) (Math.random() * 2050)  + 1;
+
+            Date d1 = new Date(month, day, year);
+            System.out.println("Made a date with month = " + month + ", day = " + day + ", year = " + year);
+            System.out.println("Which is represented by: " + d1);
+
+
+        }
         
     }
 }
