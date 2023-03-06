@@ -15,6 +15,7 @@ public class TimeV2 {
         int minutes = afterHours / 60;
         return minutes;
     }
+    // TODO: I'm getting a number of seconds > 60 for your tests
     public int getSeconds() {
         int afterMinutes = secondsTotal - getHours() - getMinutes()*60;
         int seconds = afterMinutes;
