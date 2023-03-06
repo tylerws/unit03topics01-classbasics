@@ -16,7 +16,7 @@ public class TimeV2 {
         return minutes;
     }
     public int getSeconds() {
-        int afterMinutes = secondsTotal - getHours() - getMinutes()*60;
+        int afterMinutes = secondsTotal - getHours()*3600 - getMinutes()*60;
         int seconds = afterMinutes;
         return seconds;
     }
